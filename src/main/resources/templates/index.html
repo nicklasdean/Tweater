@@ -16,10 +16,9 @@
             <input type="submit">
         </div>
         <div class="tweets">
-            <p class="tweat">Hello everyone </p>
-            <p class="tweat">Hello everyone</p>
-            <p class="tweat">Hello everyone</p>
-            <p class="tweat">Hello everyone</p>
+            <p class="tweat" th:each="tweat : ${allMyTweatsVariable}">
+                <span th:text="${tweat.getTweet()}"></span>
+            </p>
         </div>
     </div>
 </body>

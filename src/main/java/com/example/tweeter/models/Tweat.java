@@ -10,4 +10,11 @@ public class Tweat {
     public String getTweet() {
         return tweet;
     }
+
+    @Override
+    public String toString() {
+        return "Tweat{" +
+                "tweet='" + tweet + '\'' +
+                '}';
+    }
 }
