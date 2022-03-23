@@ -6,4 +6,8 @@ public class Tweat {
     public Tweat(String tweet) {
         this.tweet = tweet;
     }
+
+    public String getTweet() {
+        return tweet;
+    }
 }
