@@ -11,9 +11,11 @@
             <h1>🦩 Tweater</h1>
         </div>
         <div class="form">
-            <label for="tweat">Tweat</label>
-            <input type="text" id="tweat">
-            <input type="submit">
+            <form method="post" action="/sessionTweat">
+                <label for="tweat">Tweat</label>
+                <input type="text" id="tweat">
+                <input type="submit">
+            </form>
         </div>
         <div class="tweets">
             <p class="tweat" th:each="tweat : ${allMyTweatsVariable}">
