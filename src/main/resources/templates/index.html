@@ -18,9 +18,9 @@
             </form>
         </div>
         <div class="tweets">
-            <p class="tweat">Lorem Ipsum</p>
-            <p class="tweat">This is a tweat</p>
-            <p class="tweat"> Server rendered content is making a comeback</p>
+            <p class="tweat" th:each="tweat : ${allTweats}">
+                <span th:text="${tweat}"></span>
+            </p>
         </div>
     </div>
 </body>
