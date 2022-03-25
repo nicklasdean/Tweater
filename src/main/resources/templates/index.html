@@ -11,16 +11,16 @@
             <h1>🦩 Tweater</h1>
         </div>
         <div class="form">
-            <form method="post" action="/sessionTweat">
+            <form>
                 <label for="tweat">Tweat</label>
                 <input type="text" id="tweat">
                 <input type="submit">
             </form>
         </div>
         <div class="tweets">
-            <p class="tweat" th:each="tweat : ${allMyTweatsVariable}">
-                <span th:text="${tweat.getTweet()}"></span>
-            </p>
+            <p class="tweat">Lorem Ipsum</p>
+            <p class="tweat">This is a tweat</p>
+            <p class="tweat"> Server rendered content is making a comeback</p>
         </div>
     </div>
 </body>
