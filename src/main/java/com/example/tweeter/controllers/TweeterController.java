@@ -20,7 +20,8 @@ public class TweeterController {
     }
 
     @GetMapping("/test")
-    public String test(){
+    public String test(Model m){
+        m.addAttribute("tweat", new Tweat("Hey allesammen"));
         return "test";
     }
 }
