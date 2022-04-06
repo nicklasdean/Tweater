@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
 </head>
 <body>
-    <div th:fragment="footer">
+    <div th:fragment="footer(parameter)">
         <div>
             <p>Made by Nicklas Dean</p>
             <p>Visit my <a href="https://github.com/nicklasdean">Github</a></p>
+            <p th:utext="${parameter}">Don't forget to checkout my parameter: </p>
         </div>
     </div>
 </body>
