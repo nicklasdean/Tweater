@@ -17,6 +17,18 @@
                 <input type="submit">
             </form>
         </div>
+
+        <div class="form">
+            <form action="/login" method="POST">
+                <label for="email">e-mail</label>
+                <input type="text" id="email" name="email">
+                <label for="password">password</label>
+                <input id="password" type="password" name="password">
+
+                <input type="submit">
+            </form>
+        </div>
+
         <div class="tweets">
             <p class="tweat" th:each="tweat : ${allTweats}">
                 <span th:text="${tweat}"></span>
